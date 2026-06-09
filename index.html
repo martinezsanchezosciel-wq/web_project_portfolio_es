@@ -3,7 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <header class="header">
+      <a href="#Inicio" class="header__logo"> Osciel Martínez Sanchez </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="#Inicio" class="header__link"> Inicio </a>
+          </li>
+          <li class="header__item">
+            <a href="#projects" class="header__link"> Proyectos </a>
+          </li>
+          <li class="header__item">
+            <a href="#contact" class="header__link"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2 class="hero__welcome">Bienvenido</h2>
+        <h1 class="hero__title">¡Hola! Soy Osciel Martínez Sanchez</h1>
+        <p>
+          Frontend Developer en formación, con una sólida base en HTML y CSS
+        </p>
+        <p>
+          Desarrollador Frontend en formación, apasionado por crear experiencias
+          web modernas y responsivas.
+        </p>
+        <button class="hero__button" href="./file/cv.pdf" download>
+          Descargar CV
+        </button>
+      </section>
+      <section class="about">
+        <img
+          class="hero__image"
+          src="./image/osciel.png"
+          alt="Imagen de bienvenida"
+        />
+      </section>
+      <section class="skills">
+        <div class="skills__category">
+          <h2 class="skills__title">
+            <img class="icons" src="./icons/frontend.svg" />Frontend
+          </h2>
+          <div class="skills__items">
+            <div class="skill">
+              <img class="icons" src="./icons/html-5-svgrepo-com.svg" />
+              <span>HTML5</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/css-3-svgrepo-com.svg" />
+              <span>CSS3</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/javascript-svgrepo-com.svg" />
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h2 class="skills__title">
+            <img
+              class="icons"
+              src="./icons/custom_coding_programming_development_icon_192470.svg"
+            />Lenguajes de Programación
+          </h2>
+          <div class="skills__items">
+            <div class="skill">
+              <img class="icons" src="./icons/C-sharp-svgrepo-com.svg" />
+              <span>C#</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/php-svgrepo-com.svg" />
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h2 class="skills__title">
+            <img
+              class="icons"
+              src="./icons/tools-and-utensils-programmer-svgrepo-com.svg"
+            />Herramientas
+          </h2>
+          <div class="skills__items">
+            <div class="skill">
+              <img class="icons" src="./icons/git-svgrepo-com.svg" />
+              <span>Git</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/github-svgrepo-com.svg" />
+              <span>GitHub</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/figma-svgrepo-com.svg" />
+              <span>Figma</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/visualstudio-svgrepo-com.svg" />
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__category">
+          <h2 class="skills__title">
+            <img
+              class="icons"
+              src="./icons/development_icon_131032.svg"
+            />Desarrollo Web
+          </h2>
+          <div class="skills__items">
+            <div class="skill">
+              <img class="icons" src="./icons/graphicdesign2_78420.svg" />
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill">
+              <img class="icons" src="./icons/devices_78336.svg" />
+              <span>Diseño Web</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="languages"></div>
+      <section class="portafolio"></section>
+      <section class="contact"></section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>
