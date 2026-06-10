@@ -1,21 +1,61 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src:
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src:
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1b1b1b;
+  font-family: "Open Sans", sans-serif;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
+  font-family: "Open Sans SemiBold", sans-serif;
 }
 
 .header__logo {
   text-decoration: none;
-  color: #000;
-  font-size: 32px;
-  font-weight: 700;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .header__menu {
   display: flex;
+  font-family: "Open Sans SemiBold", sans-serif;
   gap: 40px;
   list-style: none;
   margin: 0;
@@ -24,10 +64,61 @@
 
 .header__link {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: #d6d6d6;
+  font-size: 16px;
+  font-weight: 500;
   transition: 0.3s;
 }
 .header__link:hover {
-  color: #5b5bff;
+  color: white;
+}
+
+.hero__welcome {
+  font-family: "Open Sans SemiBold", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.hero__title {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.text__sub {
+  font-family: "Open Sans Regular", sans-serif;
+  color: #d6d6d6;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.text__description {
+  font-family: "Open Sans Regular", sans-serif;
+  color: #d6d6d6;
+  font-size: 18px;
+  max-width: 600px;
+}
+.about {
+  font-family: "Archivo Black", sans-serif;
+}
+.skills__title {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.portafolio__title {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.contact__title {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.button_CV {
+  font-family: "Open Sans SemiBold", sans-serif;
 }
