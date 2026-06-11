@@ -5,21 +5,21 @@
     url("../fonts/ArchivoBlack-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   src:
     url("../fonts/OpenSans-Regular.woff2") format("woff2"),
     url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   src:
     url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
     url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   src:
     url("../fonts/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -34,18 +34,24 @@
 body {
   background-color: #1b1b1b;
   font-family: "Open Sans", sans-serif;
+  color: #fff;
+  line-height: 1.6;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 0;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: "Open Sans ", sans-serif;
 }
-
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .header__logo {
   text-decoration: none;
   color: #fff;
@@ -55,11 +61,9 @@ body {
 
 .header__menu {
   display: flex;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: "Open Sans ", sans-serif;
   gap: 40px;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .header__link {
@@ -72,53 +76,95 @@ body {
 .header__link:hover {
   color: white;
 }
-
-.hero__welcome {
-  font-family: "Open Sans SemiBold", sans-serif;
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 10px;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  min-height: 85vh;
+  padding: 60px 0;
+}
+.hero__content {
+  flex: 1;
 }
 .hero__title {
-  font-family: "Archivo Black", sans-serif;
-  color: #fff;
-  font-size: 48px;
-  max-width: 600px;
-  margin-bottom: 20px;
+  line-height: 1.1;
 }
-.text__sub {
-  font-family: "Open Sans Regular", sans-serif;
-  color: #d6d6d6;
-  font-size: 20px;
-  margin-bottom: 10px;
+.hero__description {
+  max-width: 450px;
 }
-.text__description {
-  font-family: "Open Sans Regular", sans-serif;
-  color: #d6d6d6;
-  font-size: 18px;
-  max-width: 600px;
+.hero__card {
+  width: min(100%, 420px);
+  max-width: 420px;
+  height: 900px;
+  perspective: 1000px;
+  position: relative;
+  flex-shrink: 0;
 }
-.about {
-  font-family: "Archivo Black", sans-serif;
+.hero__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-.skills__title {
-  font-family: "Archivo Black", sans-serif;
-  color: #fff;
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero__card:hover .hero__card-inner {
+  transform: rotateY(180deg);
 }
-.portafolio__title {
-  font-family: "Archivo Black", sans-serif;
-  color: #fff;
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero__card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
 }
-.contact__title {
-  font-family: "Archivo Black", sans-serif;
-  color: #fff;
-  font-size: 36px;
-  margin-bottom: 20px;
+.hero__card-back {
+  z-index: 1;
 }
+.hero__card-front,
+.hero__card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.hero__card-back {
+  background: #2d2d2d;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
 .button_CV {
-  font-family: "Open Sans SemiBold", sans-serif;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: #5b5bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.9s;
+}
+.button_CV:hover {
+  transform: translateY(-3px);
+  background: #7474ff;
 }

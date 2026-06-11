@@ -9,231 +9,255 @@
 
   <body>
     <header class="header">
-      <a href="#Inicio" class="header__logo"> Osciel Martínez Sanchez </a>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__item">
-            <a href="#Inicio" class="header__link"> Inicio </a>
-          </li>
-          <li class="header__item">
-            <a href="#projects" class="header__link"> Proyectos </a>
-          </li>
-          <li class="header__item">
-            <a href="#contact" class="header__link"> Contacto </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container__header">
+        <a href="#Inicio" class="header__logo"> Osciel Martínez Sanchez </a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#Inicio" class="header__link"> Inicio </a>
+            </li>
+            <li class="header__item">
+              <a href="#projects" class="header__link"> Proyectos </a>
+            </li>
+            <li class="header__item">
+              <a href="#contact" class="header__link"> Contacto </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h2 class="text__sub">Bienvenido</h2>
-        <h1 class="hero__title">¡Hola! Soy Osciel Martínez Sanchez</h1>
-        <p class="text__description">
-          Frontend Developer en formación, con una sólida base en HTML y CSS
-        </p>
-        <p class="text__description">
-          Desarrollador Frontend en formación, apasionado por crear experiencias
-          web modernas y responsivas.
-        </p>
-        <button class="button_CV" href="./file/cv.pdf" download>
-          Descargar CV
-        </button>
-      </section>
-      <section class="about">
-        <img
-          class="hero__image"
-          src="./image/osciel.png"
-          alt="Imagen de bienvenida"
-        />
-      </section>
-      <section class="skills">
-        <div class="skills__category">
-          <h1 class="text__title">
-            <img class="icons" src="./icons/frontend.svg" />Frontend
-          </h1>
-          <div class="skills__items">
-            <div class="skill">
-              <img class="icons" src="./icons/html-5-svgrepo-com.svg" />
-              <span>HTML5</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/css-3-svgrepo-com.svg" />
-              <span>CSS3</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/javascript-svgrepo-com.svg" />
-              <span>JavaScript</span>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__content">
+            <p class="text__sub">WELCOME!</p>
+            <h1 class="hero__title">
+              I´m <br />
+              Osciel Martínez Sanchez
+            </h1>
+            <p class="hero__description">
+              Desarrollador Frontend en formación, apasionado por crear
+              experiencias web modernas y responsivas.
+            </p>
+            <a class="button_CV" href="./file/cv.pdf" download>
+              Descargar CV
+            </a>
+          </div>
+          <div class="hero__card">
+            <div class="hero__card-inner">
+              <div class="hero__card-front">
+                <img
+                  class="hero__image"
+                  src="./image/osciel.png"
+                  alt="Osciel Martínez"
+                />
+              </div>
+              <div class="hero__card-back">
+                <h2 class="about">About Me</h2>
+                <p>
+                  Soy estudiante de Ingeniería en Diseño de Software y Redes,
+                  apasionado por el desarrollo Frontend y la creación de
+                  interfaces modernas. Actualmente continúo fortaleciendo mis
+                  habilidades mediante proyectos personales y formación
+                  especializada en Desarrollo Web Full Stack.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skills__category">
-          <h1 class="text__title">
-            <img
-              class="icons"
-              src="./icons/custom_coding_programming_development_icon_192470.svg"
-            />Lenguajes de Programación
-          </h1>
-          <div class="skills__items">
-            <div class="skill">
-              <img class="icons" src="./icons/C-sharp-svgrepo-com.svg" />
-              <span>C#</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/php-svgrepo-com.svg" />
-              <span>PHP</span>
+        </section>
+        <section class="skills">
+          <div class="skills__category">
+            <h2 class="skills__title">My skills</h2>
+            <div class="skill__grid">
+              <h2 class="text__title">
+                <img class="icons" src="./icons/frontend.svg" />Frontend
+              </h2>
+              <div class="skills__items">
+                <div class="skill">
+                  <img class="icons" src="./icons/html-5-svgrepo-com.svg" />
+                  <span>HTML5</span>
+                </div>
+                <div class="skill">
+                  <img class="icons" src="./icons/css-3-svgrepo-com.svg" />
+                  <span>CSS3</span>
+                </div>
+                <div class="skill">
+                  <img class="icons" src="./icons/javascript-svgrepo-com.svg" />
+                  <span>JavaScript</span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skills__category">
-          <h1 class="text__title">
-            <img
-              class="icons"
-              src="./icons/tools-and-utensils-programmer-svgrepo-com.svg"
-            />Herramientas
-          </h1>
-          <div class="skills__items">
-            <div class="skill">
-              <img class="icons" src="./icons/git-svgrepo-com.svg" />
-              <span>Git</span>
+          <div class="skills__category">
+            <h2 class="text__title">
+              <img
+                class="icons"
+                src="./icons/custom_coding_programming_development_icon_192470.svg"
+              />Lenguajes de Programación
+            </h2>
+            <div class="skills__items">
+              <div class="skill">
+                <img class="icons" src="./icons/C-sharp-svgrepo-com.svg" />
+                <span>C#</span>
+              </div>
+              <div class="skill">
+                <img class="icons" src="./icons/php-svgrepo-com.svg" />
+                <span>PHP</span>
+              </div>
             </div>
-            <div class="skill">
+          </div>
+          <div class="skills__category">
+            <h2 class="text__title">
+              <img
+                class="icons"
+                src="./icons/tools-and-utensils-programmer-svgrepo-com.svg"
+              />Herramientas
+            </h2>
+            <div class="skills__items">
+              <div class="skill">
+                <img class="icons" src="./icons/git-svgrepo-com.svg" />
+                <span>Git</span>
+              </div>
+              <div class="skill">
+                <img class="icons" src="./icons/github-svgrepo-com.svg" />
+                <span>GitHub</span>
+              </div>
+              <div class="skill">
+                <img class="icons" src="./icons/figma-svgrepo-com.svg" />
+                <span>Figma</span>
+              </div>
+              <div class="skill">
+                <img class="icons" src="./icons/visualstudio-svgrepo-com.svg" />
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills__category">
+            <h2 class="text__title">Habilidades</h2>
+            <h2 class="text__sub">
+              <img
+                class="icons"
+                src="./icons/development_icon_131032.svg"
+              />Desarrollo Web
+            </h2>
+            <div class="skills__items">
+              <div class="skill">
+                <img class="icons" src="./icons/graphicdesign2_78420.svg" />
+                <span>Responsive Design</span>
+              </div>
+              <div class="skill">
+                <img class="icons" src="./icons/devices_78336.svg" />
+                <span>Diseño Web</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill__lenguaje">
+            <h2 class="text__title">Idiomas</h2>
+            <p class="skill__lenguaje-description">Español</p>
+            <p class="text__description">
+              Lengua materna, con habilidades avanzadas en comunicación escrita
+              y verbal.
+            </p>
+            <p class="skill__lenguaje-description">Inglés</p>
+            <p class="text__description">
+              Nivel intermedio, con capacidad para comprender y comunicarse en
+              situaciones cotidianas y profesionales.
+            </p>
+          </div>
+          <div class="skill__edu">
+            <h2 class="text__title">Educación</h2>
+            <h4 class="skill__edu-school">Preparatoria</h4>
+            <p class="text__description">
+              Centro de Bachillerato Tecnológico Industrial y de Servicios No.
+              16 (CBTIS 16) - Graduado en 2021,
+            </p>
+            <p class="text__description">
+              Titulado en la especialidad de Técnico en Programación.
+            </p>
+            <h2 class="text__sub">Universidad</h2>
+            <p class="text__description">
+              Universidad Valle de Mexico (UVM) - Modalidad Online - 2023-2026
+            </p>
+            <p class="text__description">
+              Ingeniería en Diseño de Software y Redes - En trámite de
+              titulación.
+            </p>
+            <h2 class="text__sub">Bootcamp Triple Ten</h2>
+            <p class="text__description">
+              Bootcamp de Desarrollo Web Full Stack - 2026
+            </p>
+            <p class="text__description">Actualmente cursando.</p>
+            <p class="text__description">Duración de 12 meses.</p>
+            <p class="text__description">Técnicas modernas de desarrollo.</p>
+            <p class="text__description">Buenas prácticas de programación.</p>
+          </div>
+        </section>
+        <section class="portafolio" id="projects">
+          <h2 class="text__title">Coffee Shop</h2>
+          <p class="text__description">
+            <img
+              class="img__project"
+              src="./image/coffe.png"
+              alt="Imagen del proyecto"
+            />
+            Proyecto de diseño y desarrollo de una página web para una cafetería
+            ficticia, utilizando HTML y CSS para crear una experiencia atractiva
+            y funcional.
+          </p>
+
+          <a
+            class="cafeteria__github"
+            href="https://github.com/martinezsanchezosciel-wq/web_project_coffeeshop_es"
+          >
+            Ver en GitHub
+          </a>
+        </section>
+        <section class="contact" id="contact">
+          <h2 class="text__title">Contacto</h2>
+          <p class="text__description">
+            ¿Tienes un proyecto o una oportunidad laboral? Estoy disponible para
+            colaborar y seguir creciendo profesionalmente. Puedes contactarme a
+            través de cualquiera de los siguientes medios.
+          </p>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <img class="icons" src="./icons/gmail-svgrepo-com.svg" />
+              <a href="mailto:martinez.sanchez.osciel@gmail.com"
+                >martinez.sanchez.osciel@gmail.com</a
+              >
+            </li>
+            <li class="contact__item">
               <img class="icons" src="./icons/github-svgrepo-com.svg" />
-              <span>GitHub</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/figma-svgrepo-com.svg" />
-              <span>Figma</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/visualstudio-svgrepo-com.svg" />
-              <span>VS Code</span>
-            </div>
-          </div>
-        </div>
-        <div class="skills__category">
-          <h1 class="text__title">Habilidades</h1>
-          <h2 class="text__sub">
-            <img
-              class="icons"
-              src="./icons/development_icon_131032.svg"
-            />Desarrollo Web
-          </h2>
-          <div class="skills__items">
-            <div class="skill">
-              <img class="icons" src="./icons/graphicdesign2_78420.svg" />
-              <span>Responsive Design</span>
-            </div>
-            <div class="skill">
-              <img class="icons" src="./icons/devices_78336.svg" />
-              <span>Diseño Web</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill__lenguaje">
-          <h1 class="text__title">Idiomas</h1>
-          <p class="skill__lenguaje-description">Español</p>
-          <p class="text__description">
-            Lengua materna, con habilidades avanzadas en comunicación escrita y
-            verbal.
-          </p>
-          <p class="skill__lenguaje-description">Inglés</p>
-          <p class="text__description">
-            Nivel intermedio, con capacidad para comprender y comunicarse en
-            situaciones cotidianas y profesionales.
-          </p>
-        </div>
-        <div class="skill__edu">
-          <h1 class="text__title">Educación</h1>
-          <h4 class="skill__edu-school">Preparatoria</h4>
-          <p class="text__description">
-            Centro de Bachillerato Tecnológico Industrial y de Servicios No. 16
-            (CBTIS 16) - Graduado en 2021,
-          </p>
-          <p class="text__description">
-            Titulado en la especialidad de Técnico en Programación.
-          </p>
-          <h2 class="text__sub">Universidad</h2>
-          <p class="text__description">
-            Universidad Valle de Mexico (UVM) - Modalidad Online - 2023-2026
-          </p>
-          <p class="text__description">
-            Ingeniería en Diseño de Software y Redes - En tramite de titulación.
-          </p>
-          <h2 class="text__sub">Bootcamp Triple Ten</h2>
-          <p class="text__description">
-            Bootcamp de Desarrollo Web Full Stack - 2026
-          </p>
-          <p class="text__description">Actualmente cursando.</p>
-          <p class="text__description">Duracion de 12 meses.</p>
-          <p class="text__description">Tecnicas modernas de desarrollo.</p>
-          <p class="text__description">Buenas prácticas de programación.</p>
-        </div>
-      </section>
-      <section class="portafolio" id="projects">
-        <h1 class="text__title">Coffe Shop</h1>
-        <p class="text__description">
-          <img
-            class="img__project"
-            src="./image/coffe.png"
-            alt="Imagen del proyecto"
-          />
-          Proyecto de diseño y desarrollo de una página web para una cafetería
-          ficticia, utilizando HTML y CSS para crear una experiencia atractiva y
-          funcional.
-        </p>
+              <a
+                href="https://github.com/martinezsanchezosciel-wq"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li class="contact__item">
+              <img class="icons" src="./icons/linkedin-svgrepo-com.svg" />
+              <a
+                href="https://www.linkedin.com/in/osciel-martnez-sanchez-804682327"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="contact__item">
+              <img class="icons" src="./icons/location-pin-svgrepo-com.svg" />
+              <span class="text__description">Atlixco, Puebla, México</span>
+            </li>
 
-        <a
-          class="cafeteria__github"
-          href="https://github.com/martinezsanchezosciel-wq/web_project_coffeeshop_es"
-        >
-          Ver en GitHub
-        </a>
-      </section>
-      <section class="contact" id="contact">
-        <h1 class="text__title">Contacto</h1>
-        <p class="text__description">
-          ¿Tienes un proyecto o una oportunidad laboral? Estoy disponible para
-          colaborar y seguir creciendo profesionalmente. Puedes contactarme a
-          través de cualquiera de los siguientes medios.
-        </p>
-        <ul class="contact__list">
-          <li class="contact__item">
-            <img class="icons" src="./icons/gmail-svgrepo-com.svg" />
-            <a href="mailto:martinez.sanchez.osciel@gmail.com"
-              >martinez.sanchez.osciel@gmail.com</a
-            >
-          </li>
-          <li class="contact__item">
-            <img class="icons" src="./icons/github-svgrepo-com.svg" />
-            <a
-              href="https://github.com/martinezsanchezosciel-wq"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </li>
-          <li class="contact__item">
-            <img class="icons" src="./icons/linkedin-svgrepo-com.svg" />
-            <a
-              href="https://www.linkedin.com/in/osciel-martnez-sanchez-804682327"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-          </li>
-          <li class="contact__item">
-            <img class="icons" src="./icons/location-pin-svgrepo-com.svg" />
-            <span class="text__description">Atlixco, Puebla, México</span>
-          </li>
-
-          <li class="contact__item">
-            <img class="icons" src="./icons/laptop-svgrepo-com.svg" />
-            <span class="text__description"
-              >Disponible para trabajo remoto e híbrido</span
-            >
-          </li>
-        </ul>
-      </section>
+            <li class="contact__item">
+              <img class="icons" src="./icons/laptop-svgrepo-com.svg" />
+              <span class="text__description"
+                >Disponible para trabajo remoto e híbrido</span
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <h2 class="text__sub">Desarrollado por Osciel Martínez Sanchez</h2>
