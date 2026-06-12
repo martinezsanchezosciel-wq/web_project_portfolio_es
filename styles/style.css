@@ -246,10 +246,25 @@ body {
   height: 20px;
 }
 .icons__title {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 .skills__category-grid {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 50px;
   align-items: center;
-  justify-content: space-between;
+}
+.point {
+  list-style: none;
+}
+.list__tools {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.text__title {
+  font-size: 20px;
+  padding-top: 0;
 }
