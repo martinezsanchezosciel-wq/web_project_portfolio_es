@@ -252,12 +252,13 @@ body {
 .skills__category-grid {
   display: grid;
   padding-top: 60px;
-  grid-template-columns: repeat(3, 3fr);
-  gap: 50px;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 20%;
 }
 .point {
   list-style: none;
+  padding-top: 10px;
 }
 .list__tools {
   list-style: none;
@@ -266,5 +267,118 @@ body {
 }
 .text__title {
   font-size: 20px;
-  padding-top: 0;
+}
+.academy {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-bottom: 60px;
+}
+.bar__progress {
+  width: 75%;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #2d2d2d;
+}
+.bar__fill-esp {
+  height: 18px;
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(to right, purple, #26c6da 100%);
+}
+.bar__fill-eng {
+  height: 18px;
+  width: 35%;
+  border-radius: 15px;
+  background: linear-gradient(to right, purple, #26c6da 100%);
+}
+.bar__progress {
+  overflow: hidden;
+}
+.skill__lenguaje-title {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.skill__edu-school {
+  font-size: 23px;
+  margin-top: 15px;
+}
+.title__project,
+.text__description,
+.cafeteria__github {
+  padding-left: 10px;
+}
+.cafeteria__github {
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.bttn__GitHub {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 14px 32px;
+  background: #5b5bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.9s;
+}
+.bttn__GitHub:hover {
+  background: #7474ff;
+}
+.project__card {
+  max-width: 50%;
+  background: #2d2d2d;
+  max-height: 25%;
+  border-radius: 20px;
+}
+.container__img {
+  width: 590px;
+  height: 350px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.img__project {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.project__card:hover {
+  transform: translateY(-4.02px) scale(1.06);
+}
+.contact {
+  padding-top: 60px;
+}
+.contact__list {
+  display: flex;
+  font-family: "Open Sans ", sans-serif;
+  gap: 40px;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.contact__link {
+  text-decoration: none;
+  color: #d6d6d6;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.contact__link:hover {
+  color: white;
+}
+.footer {
+  padding-top: 40px;
+  width: 100%;
+  height: 250px;
+}
+.text__description-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.text__copyright {
+  padding-bottom: 0px;
 }
