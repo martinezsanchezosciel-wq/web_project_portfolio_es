@@ -26,7 +26,7 @@ Sitio web de portfolio personal creado para presentar mis habilidades, formació
 
 ## Enlace del proyecto
 
-Aquí irá el enlace de GitHub Pages.
+https://www.linkedin.com/in/osciel-martnez-sanchez-804682327
 
 ## Autor
 

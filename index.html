@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
@@ -32,10 +32,7 @@
         <section class="hero" id="Inicio">
           <div class="hero__content">
             <p class="text__sub">WELCOME!</p>
-            <h1 class="hero__title">
-              I´m <br />
-              Osciel Martínez Sanchez
-            </h1>
+            <h1 class="hero__title">I´m Osciel Martínez Sanchez</h1>
             <p class="hero__description">
               Desarrollador Frontend en formación, apasionado por crear
               experiencias web modernas y responsivas.
@@ -266,9 +263,8 @@
           <div class="academy">
             <div class="skill__lenguaje">
               <div class="lenguaje">
-                <h1 class="text__sub">Idiomas</h1>
+                <h2 class="text__sub">Idiomas</h2>
                 <p class="skill__lenguaje-title">Español</p>
-
                 <p class="text__description">
                   Lengua materna, con habilidades avanzadas en comunicación
                   escrita y verbal.
@@ -279,7 +275,6 @@
               </div>
               <div class="lenguaje">
                 <p class="skill__lenguaje-title">Inglés</p>
-
                 <p class="text__description">
                   Nivel intermedio, con capacidad para comprender y comunicarse
                   en situaciones cotidianas y profesionales.
@@ -290,7 +285,7 @@
               </div>
             </div>
             <div class="skill__edu">
-              <h1 class="text__sub">Educación</h1>
+              <h2 class="text__sub">Educación</h2>
               <h2 class="skill__edu-school">Preparatoria</h2>
               <p class="text__description">
                 Centro de Bachillerato Tecnológico Industrial y de Servicios No.
@@ -319,15 +314,17 @@
           </div>
         </section>
         <section class="portafolio" id="projects">
+          <h2 class="title__project">Coffee Shop</h2>
           <div class="project__card">
-            <h2 class="title__project">Coffee Shop</h2>
             <div class="container__img">
-              <img
-                class="img__project"
-                src="./image/coffe.png"
-                alt="Captura del proyecto Coffee Shop"
-              />
+              <div class="project__card-overlay">
+              </div>
+                <img
+                  class="img__project"
+                  src="./image/coffe.png"
+                  alt="Captura del proyecto Coffee Shop"/>
             </div>
+            <div class="project__description">
             <p class="text__description">
               Proyecto de diseño y desarrollo de una página web para una
               cafetería ficticia, utilizando HTML y CSS para crear una
@@ -336,85 +333,91 @@
             <a
               class="bttn__GitHub"
               href="https://github.com/martinezsanchezosciel-wq/web_project_coffeeshop_es"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver en GitHub
-            </a>
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver en GitHub
+              </a>
+            </div>
           </div>
         </section>
+        <div class="Container__contact">
         <section class="contact" id="contact">
-          <h2 class="text__title">Contacto</h2>
-          <p class="text__description">
-            ¿Tienes un proyecto o una oportunidad laboral? Estoy disponible para
-            colaborar y seguir creciendo profesionalmente. <br />
-            Puedes contactarme a través de cualquiera de los siguientes medios.
-          </p>
-          <ul class="contact__list">
-            <li class="contact__item">
-              <img
-                class="icons"
-                src="./icons/gmail-svgrepo-com.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <a
-                class="contact__link"
-                href="mailto:martinez.sanchez.osciel@gmail.com"
-                >martinez.sanchez.osciel@gmail.com</a
-              >
-            </li>
-            <li class="contact__item">
-              <img
-                class="icons"
-                src="./icons/github-svgrepo-com.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <a
-                class="contact__link"
-                href="https://github.com/martinezsanchezosciel-wq"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
-            </li>
-            <li class="contact__item">
-              <img
-                class="icons"
-                src="./icons/linkedin-svgrepo-com.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <a
-                class="contact__link"
-                href="https://www.linkedin.com/in/osciel-martnez-sanchez-804682327"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="contact__item">
-              <img
-                class="icons"
-                src="./icons/location-pin-svgrepo-com.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span class="text__description">Atlixco, Puebla, México</span>
-            </li>
+            <h2 class="text__title">Contacto</h2>
+            <p class="text__description">
+              ¿Tienes un proyecto o una oportunidad laboral? Estoy disponible
+              para colaborar y seguir creciendo profesionalmente.
+            </p>
+            <p>
+              Puedes contactarme a través de cualquiera de los siguientes
+              medios.
+            </p>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <img
+                  class="icons"
+                  src="./icons/gmail-svgrepo-com.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <a
+                  class="contact__link"
+                  href="mailto:martinez.sanchez.osciel@gmail.com"
+                  >martinez.sanchez.osciel@gmail.com</a
+                >
+              </li>
+              <li class="contact__item">
+                <img
+                  class="icons"
+                  src="./icons/github-svgrepo-com.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <a
+                  class="contact__link"
+                  href="https://github.com/martinezsanchezosciel-wq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+              <li class="contact__item">
+                <img
+                  class="icons"
+                  src="./icons/linkedin-svgrepo-com.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <a
+                  class="contact__link"
+                  href="https://www.linkedin.com/in/osciel-martnez-sanchez-804682327"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="contact__item">
+                <img
+                  class="icons"
+                  src="./icons/location-pin-svgrepo-com.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span class="text__description">Atlixco, Puebla, México</span>
+              </li>
 
-            <li class="contact__item">
-              <img
-                class="icons"
-                src="./icons/laptop-svgrepo-com.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span class="text__description"
-                >Disponible para trabajo remoto e híbrido</span
-              >
-            </li>
-          </ul>
+              <li class="contact__item">
+                <img
+                  class="icons"
+                  src="./icons/laptop-svgrepo-com.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span class="text__description"
+                  >Disponible para trabajo remoto e híbrido</span
+                >
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
