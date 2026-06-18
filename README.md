@@ -26,7 +26,7 @@ Sitio web de portfolio personal creado para presentar mis habilidades, formació
 
 ## Enlace del proyecto
 
-https://github.com/martinezsanchezosciel-wq/web_project_coffeeshop_es
+https://github.com/martinezsanchezosciel-wq/web_project_portfolio_es
 
 ## Autor
 
