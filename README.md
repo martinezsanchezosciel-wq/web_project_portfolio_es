@@ -26,7 +26,7 @@ Sitio web de portfolio personal creado para presentar mis habilidades, formació
 
 ## Enlace del proyecto
 
-https://www.linkedin.com/in/osciel-martnez-sanchez-804682327
+https://github.com/martinezsanchezosciel-wq/web_project_coffeeshop_es
 
 ## Autor
 
